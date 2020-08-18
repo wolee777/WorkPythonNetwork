@@ -1,11 +1,19 @@
 import socket
 
-HOST = '127.0.0.1'  # The server's hostname or IP address
-PORT = 65432        # The port used by the server
+HOST = '127.0.0.1'  
+PORT = 9000       
 
 with socket.socket( socket.AF_INET, socket.SOCK_STREAM ) as s:
     s.connect( ( HOST, PORT ) )
-    s.sendall( b'Hi Server~~~' )
-    data = s.recv(1024)
+    select = int( input( 'Input multiple number ( 1 ~ 99, QUIT : other number ): ' ) )
+    while select >= 1 and select <= 99:
+        s.send( str( select ).encode() )
+        datas = s.recv( 108 )
+        
+        print( '[ Client Message : Received : ]' )  
+        print( datas )          
+        for data in datas:
+            print( data )
+        select = int( input( 'Input multiple number ( 1 ~ 99, QUIT : other number ): ' ) )
 
-print( '\tClient Message : Received : {}'.format( repr( data.decode() ) ) )
+print( '[ Stop Client]' )
