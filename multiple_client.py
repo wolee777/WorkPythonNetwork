@@ -8,12 +8,13 @@ with socket.socket( socket.AF_INET, socket.SOCK_STREAM ) as s:
     select = int( input( 'Input multiple number ( 1 ~ 99, QUIT : other number ): ' ) )
     while select >= 1 and select <= 99:
         s.send( str( select ).encode() )
-        datas = s.recv( 108 )
         
-        print( '[ Client Message : Received : ]' )  
-        print( datas )          
-        for data in datas:
-            print( data )
+        print( '[ Client Message : Received : ]' )
+        recv_messages = []
+
+        recv_message = s.recv( 1024 ).decode() 
+        print( recv_message )
+
         select = int( input( 'Input multiple number ( 1 ~ 99, QUIT : other number ): ' ) )
 
 print( '[ Stop Client]' )
