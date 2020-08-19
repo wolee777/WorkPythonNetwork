@@ -1,6 +1,6 @@
 import socket
 
-HOST = '127.0.0.1' 
+HOST = '192.168.101.101' 
 PORT = 9000       
 
 print( '[ Server info : ( {}:{} ) ]'.format( HOST, PORT ) )
@@ -16,7 +16,7 @@ with socket.socket( socket.AF_INET, socket.SOCK_STREAM ) as s:
                 data = int( conn.recv( 2 ) )
                 print( '[ Server Message : Receive message {} ]'.format( data ) )
 
-                if data > 1 and data < 99:
+                if data >= 1 and data <= 99:
                     send_message = ""
                     for i in range( 1, 10 ):
                         multiple = data * i
