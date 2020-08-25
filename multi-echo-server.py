@@ -6,13 +6,13 @@ HOST = '127.0.0.1'
 PORT = 9000        
 
 def client_process( client_socket, addr ):
-    with client_socket:
+    with client_socket as cs:
         print( '[ Server Message : Connected by {} ]'.format( addr ) )
         while True:
-            data = client_socket.recv( 1024 )
+            data = cs.recv( 1024 )
             if not data:
                 break
-            client_socket.sendall( data )
+            cs.sendall( data )
             time.sleep( 5 )
 
 def server_process():
