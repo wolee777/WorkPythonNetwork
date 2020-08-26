@@ -3,7 +3,7 @@ from threading import Thread
 import socket
 
 HOST = '192.168.101.101' 
-PORT = 9000       
+PORT = 5000       
 
 # sensor initialize
 GPIO.led_init()
