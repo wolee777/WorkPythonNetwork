@@ -1,0 +1,8 @@
+
+	<실습>
+	1. IoT Device의 LED/Motor/Ultrasonic Sensor를
+	   Network을 이용하여 제어 및 Sensor값 읽기 프로그램을 작성
+
+	   IoT Device에는 Server Program을 구동하고,
+	   PC에는 Client Program을 구동하며, 메뉴를 통해 IoT Device의
+	   Sensor를 제어한다.

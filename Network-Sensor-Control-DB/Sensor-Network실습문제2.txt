@@ -1,0 +1,16 @@
+
+	<실습>
+	1. IoT Device의 Ultrasonic/온습도/조도 Sensor data를
+	   Network을 이용하여 Sensor값을 읽어 DB에 저장하는 
+	   프로그램을 작성
+
+	   IoT Device에는 Client Program을 구동하여 Sensor data를 
+	   주기적으로 전송한다.
+	   PC에는 Server Program을 구동하며, Client로 부터 전송된
+	   data를 DB에 저장하며 메뉴를 통해 조회하는 프로그램을
+	   작성한다.
+
+	* iCORE-SDP pro(target) System date time 설정
+	  shell에서 
+		
+	  tea@planx ~$ sudo date -s "20180510 14:11"

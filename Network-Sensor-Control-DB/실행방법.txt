@@ -1,0 +1,13 @@
+SDP Sensor Control 예제 프로그램 실행 방법
+
+1. Client-SDP directory 내용을 SDP에 home directory 밑에 Workspace directory에 복사한다.
+
+2. Server-PC directory 내용을 PC의 적당한 directory에 복사한다.
+
+3. SDP의 Client-SDP directory로 이동한 후 terminal의 shell prompt에서 "python3 sensor_NET_Client_ClassLib.py를 실행해서 server를 실행한다.
+
+4. PC의 Server-PC directory로 이동한 후 명령 프롬프트의 prompt에서 "python sensor_NET_Server_ClassLib.py"를 실행해서 client를 실행한다.
+(Python 설치 위치를 path설정 하여야 명령 실행이 가능)
+
+5. PC의 Server-PC dirctory로 이동한 후 명령 프롬프트의 prompt에서 "python sensor_NET_Monitor_ClassLib.py"를 실행하여 DB 내용을 조회한다.
+(SDP에 timer가 없어서 현재 날짜가 설정되어 있지는 않으므로 SDP에서 date명령으로 설정된 날짜를 확인한 후 검색시 참고 하여야 한다.)

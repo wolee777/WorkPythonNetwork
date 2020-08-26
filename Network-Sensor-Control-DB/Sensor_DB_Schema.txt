@@ -1,0 +1,19 @@
+sensor.db
+
+CREATE TABLE "sensor_measure" ( 
+`id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, 
+`date` TEXT NOT NULL, 
+`time` TEXT NOT NULL, 
+`kind` TEXT NOT NULL, 
+`measurevalue` REAL NOT NULL )
+
+
+sensorinfo.db
+
+CREATE TABLE "sensor_info" ( 
+`id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, 
+`kind` TEXT NOT NULL, 
+`value` INTEGER NOT NULL, 
+`apply` INTEGER DEFAULT 0, 
+`date` TEXT NOT NULL, 
+`time` TEXT NOT NULL )
