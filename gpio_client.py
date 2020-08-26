@@ -1,7 +1,7 @@
 import socket
 
 HOST = '192.168.101.101'  
-PORT = 9000       
+PORT = 5000       
 
 actions = [ 'DC-ST', 'LD1ON', 'LD2ON', 'LD1OF', 'LD2OF', 'LDAON', 'LDAOF', 'LDBLK', 'DCFOR', 'DCBAK' ]
 
