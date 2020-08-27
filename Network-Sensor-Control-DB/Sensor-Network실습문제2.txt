@@ -13,4 +13,4 @@
 	* iCORE-SDP pro(target) System date time 설정
 	  shell에서 
 		
-	  tea@planx ~$ sudo date -s "20180510 14:11"
+	  tea@planx ~$ sudo date -s "20200827 09:00"
